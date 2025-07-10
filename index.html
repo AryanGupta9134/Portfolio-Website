@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Portfolio Website</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/skins/color-1.css" />
     <link
@@ -17,26 +17,26 @@
       <!-- Aside start  -->
       <div class="aside">
         <div class="logo">
-          <a href="#"><span>A</span>ryan</a>
+          <a href="/"><span>A</span>ryan</a>
         </div>
         <div class="nav-toggler">
           <span></span>
         </div>
         <ul class="nav">
           <li>
-            <a href="#" class="active"><i class="fa fa-home"></i>Home</a>
+            <a href="#home" class="active"><i class="fa fa-home"></i>Home</a>
           </li>
           <li>
-            <a href="#"><i class="fa fa-user"></i>About</a>
+            <a href="#about"><i class="fa fa-user"></i>About</a>
           </li>
           <li>
-            <a href="#"><i class="fa fa-list"></i>Services</a>
+            <a href="#services"><i class="fa fa-list"></i>Services</a>
           </li>
           <li>
-            <a href="#"><i class="fa fa-briefcase"></i>Portfolio</a>
+            <a href="#portfolio"><i class="fa fa-briefcase"></i>Portfolio</a>
           </li>
           <li>
-            <a href="#"><i class="fa fa-comments"></i>Contact</a>
+            <a href="#contact"><i class="fa fa-comments"></i>Contact</a>
           </li>
         </ul>
       </div>
@@ -44,7 +44,7 @@
       <!-- Main content start  -->
       <div class="main-content">
         <!-- Home section starting  -->
-        <section class="home section">
+        <section id="home" class="home section">
           <div class="container">
             <div class="row">
               <div class="home-info padd-15">
@@ -65,7 +65,7 @@
         </section>
         <!-- Home section ending -->
         <!-- About section starting  -->
-        <section class="about section">
+        <section class="about section" id="about">
           <div class="container">
             <div class="row">
               <div class="section-title padd-15">
@@ -78,9 +78,9 @@
                   <div class="about-text padd-15">
                     <h3>I'm Aryan Gupta a <span>Web Developer</span></h3>
                     <p>
-                      A passionate developer in Web Development,
-                      I’ve built responsive, and user-friendly web applications
-                      that deliver seamless user experiences. I have a strong
+                      A passionate developer in Web Development, I’ve built
+                      responsive, and user-friendly web applications that
+                      deliver seamless user experiences. I have a strong
                       understanding of modern front-end frameworks, database
                       design, and query optimization. My experience with Git,
                       CI/CD pipelines, and deployment processes allows me to
@@ -103,9 +103,6 @@
                         <p>Age : <span>21</span></p>
                       </div>
                       <div class="info-item padd-15">
-                        <p>Email : <span>aryan.gupta158935@gmail.com</span></p>
-                      </div>
-                      <div class="info-item padd-15">
                         <p>Degree : <span>BCA</span></p>
                       </div>
                       <div class="info-item padd-15">
@@ -120,64 +117,95 @@
                     </div>
                     <div class="row">
                       <div class="buttons padd-15">
-                        <a href="./Resume/Resume.pdf" class="btn" target="_blank">Download CV</a>
+                        <a
+                          href="./Resume/Resume.pdf"
+                          class="btn"
+                          target="_blank"
+                          >Download CV</a
+                        >
                         <a href="#Contact" class="btn hire-me">Hire Me</a>
                       </div>
                     </div>
                   </div>
-                  <div class="skills padd-15">
-                    <div class="row">
-                      <div class="skill-item padd-15">
-                        <h5>HTML</h5>
-                        <div class="progress">
-                          <div class="progress-in" style="width: 90%"></div>
-                          <div class="skill-percent">90%</div>
-                        </div>
-                      </div>
-                      <div class="skill-item padd-15">
-                        <h5>CSS</h5>
-                        <div class="progress">
-                          <div class="progress-in" style="width: 80%"></div>
-                          <div class="skill-percent">80%</div>
-                        </div>
-                      </div>
-                      <div class="skill-item padd-15">
-                        <h5>Bootstrap</h5>
-                        <div class="progress">
-                          <div class="progress-in" style="width: 90%"></div>
-                          <div class="skill-percent">90%</div>
-                        </div>
-                      </div>
-                      <div class="skill-item padd-15">
-                        <h5>JS</h5>
-                        <div class="progress">
-                          <div class="progress-in" style="width: 70%"></div>
-                          <div class="skill-percent">70%</div>
-                        </div>
-                      </div>
-                      <div class="skill-item padd-15">
-                        <h5>React-JS</h5>
-                        <div class="progress">
-                          <div class="progress-in" style="width: 70%"></div>
-                          <div class="skill-percent">70%</div>
-                        </div>
-                      </div>
-                      <div class="skill-item padd-15">
-                        <h5>PHP</h5>
-                        <div class="progress">
-                          <div class="progress-in" style="width: 80%"></div>
-                          <div class="skill-percent">80%</div>
-                        </div>
-                      </div>
-                      <div class="skill-item padd-15">
-                        <h5>MySQL</h5>
-                        <div class="progress">
-                          <div class="progress-in" style="width: 90%"></div>
-                          <div class="skill-percent">90%</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                 <div class="skills padd-15">
+  <div class="row">
+    <!-- Frontend Tools -->
+    <div class="tool-box padd-15">
+      <h4 class="tool-heading">Frontend Tools</h4>
+      <div class="skill-item">
+        <h5>HTML</h5>
+        <div class="progress">
+          <div class="progress-in" style="width: 0%;" data-progress="95%"></div>
+        </div>
+      </div>
+      <div class="skill-item">
+        <h5>CSS</h5>
+        <div class="progress">
+          <div class="progress-in" style="width: 0%;" data-progress="90%"></div>
+        </div>
+      </div>
+      <div class="skill-item">
+        <h5>JavaScript</h5>
+        <div class="progress">
+          <div class="progress-in" style="width: 0%;" data-progress="85%"></div>
+        </div>
+      </div>
+      <div class="skill-item">
+        <h5>React JS</h5>
+        <div class="progress">
+          <div class="progress-in" style="width: 0%;" data-progress="80%"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Backend Tools -->
+    <div class="tool-box padd-15">
+      <h4 class="tool-heading">Backend Tools</h4>
+      <div class="skill-item">
+        <h5>PHP</h5>
+        <div class="progress">
+          <div class="progress-in" style="width: 0%;" data-progress="85%"></div>
+        </div>
+      </div>
+      <div class="skill-item">
+        <h5>MySQL</h5>
+        <div class="progress">
+          <div class="progress-in" style="width: 0%;" data-progress="90%"></div>
+        </div>
+      </div>
+      <div class="skill-item">
+        <h5>Node.js</h5>
+        <div class="progress">
+          <div class="progress-in" style="width: 0%;" data-progress="70%"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Other Tools -->
+    <div class="tool-box padd-15">
+      <h4 class="tool-heading">Other Tools</h4>
+      <div class="skill-item">
+        <h5>Git & GitHub</h5>
+        <div class="progress">
+          <div class="progress-in" style="width: 0%;" data-progress="85%"></div>
+        </div>
+      </div>
+      <div class="skill-item">
+        <h5>Figma</h5>
+        <div class="progress">
+          <div class="progress-in" style="width: 0%;" data-progress="70%"></div>
+        </div>
+      </div>
+      <div class="skill-item">
+        <h5>Postman</h5>
+        <div class="progress">
+          <div class="progress-in" style="width: 0%;" data-progress="75%"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
                 </div>
                 <div class="row">
                   <div class="education padd-15">
@@ -303,7 +331,7 @@
         </section>
         <!-- About section ending -->
         <!-- Service section start -->
-        <section class="service section">
+        <section class="service section" id="services">
           <div class="container">
             <div class="row">
               <div class="section-title padd-15">
@@ -400,7 +428,7 @@
         </section>
         <!-- Service section end  -->
         <!-- Portfolio section start -->
-        <section class="portfolio section">
+        <section class="portfolio section" id="portfolio">
           <div class="container">
             <div class="row">
               <div class="section-title padd-15">
@@ -489,8 +517,52 @@
           </div>
         </section>
         <!-- Portfolio section end  -->
+         <!-- Certification section start -->
+<section class="section certificate" id="certificates">
+  <div class="container">
+    <div class="section-title padd-15">
+      <h2>Certificates</h2>
+    </div>
+    <div class="row">
+      <!-- Certificate Card -->
+      <div class="certificate-item padd-15">
+        <div class="certificate-item-inner shadow-dark">
+          <img src="./Certificates/Cert1.jpg" alt="Certificate 1" />
+          <h4>Web Development Certificate</h4>
+          <a href="certificates/cert1.jpg" target="_blank" class="btn">View</a>
+        </div>
+      </div>
+      <div class="certificate-item padd-15">
+        <div class="certificate-item-inner shadow-dark">
+          <img src="./Certificates/Cert1.jpg" alt="Certificate 1" />
+          <h4>Web Development Certificate</h4>
+          <a href="certificates/cert1.jpg" target="_blank" class="btn">View</a>
+        </div>
+      </div>
+      <div class="certificate-item padd-15">
+        <div class="certificate-item-inner shadow-dark">
+          <img src="./Certificates/Cert1.jpg" alt="Certificate 1" />
+          <h4>Web Development Certificate</h4>
+          <a href="certificates/cert1.jpg" target="_blank" class="btn">View</a>
+        </div>
+      </div>
+
+      <div class="certificate-item padd-15">
+        <div class="certificate-item-inner shadow-dark">
+          <img src="certificates/cert2.jpg" alt="Certificate 2" />
+          <h4>JavaScript Masterclass</h4>
+          <a href="certificates/cert2.jpg" target="_blank" class="btn">View</a>
+        </div>
+      </div>
+
+      <!-- Add more certificates as needed -->
+    </div>
+  </div>
+</section>
+
+         <!-- Certification section end -->
         <!-- Contact section start -->
-        <section class="contact section">
+        <section class="contact section" id="contact">
           <div class="container">
             <div class="row">
               <div class="section-title padd-15">
@@ -535,69 +607,47 @@
               </div>
               <!-- contact info item end  -->
             </div>
-            <h3 class="contact-title padd-15">Send me an email</h3>
-            <h4 class="contact-sub-title padd-15">I'm active in responses</h4>
-            <!-- contact form  -->
-            <div class="row">
-              <div class="contact-form padd-15">
-                <div class="row">
-                  <div class="form-item col-6 padd-15">
-                    <div class="form-group">
-                      <input
-                        type="text"
-                        class="form-control"
-                        placeholder="Name"
-                      />
-                    </div>
-                  </div>
-                  <div class="form-item col-6 padd-15">
-                    <div class="form-group">
-                      <input
-                        type="email"
-                        class="form-control"
-                        placeholder="Email"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="form-item col-12 padd-15">
-                    <div class="form-group">
-                      <input
-                        type="text"
-                        class="form-control"
-                        placeholder="Subject"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="form-item col-12 padd-15">
-                    <div class="form-group">
-                      <textarea
-                        name=""
-                        class="form-control"
-                        id=""
-                        placeholder="Message"
-                      ></textarea>
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="form-item col-12 padd-15">
-                    <button type="submit" class="btn">Send Message</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Contact form end  -->
           </div>
         </section>
         <!-- Contact section end -->
       </div>
+      <!-- Dark mode start -->
+      <div class="theme-panel">
+        <button id="theme-toggle" title="Toggle Dark Mode">🌓</button>
+        <div class="color-options">
+          <span
+            class="color-swatch"
+            data-color="#ec1839"
+            style="background: #ec1839"
+          ></span>
+          <span
+            class="color-swatch"
+            data-color="#0fc70f"
+            style="background: #0fc70f"
+          ></span>
+          <span
+            class="color-swatch"
+            data-color="#1fa2ff"
+            style="background: #1fa2ff"
+          ></span>
+          <span
+            class="color-swatch"
+            data-color="#f39c12"
+            style="background: #f39c12"
+          ></span>
+          <span
+            class="color-swatch"
+            data-color="#8e44ad"
+            style="background: #8e44ad"
+          ></span>
+        </div>
+      </div>
+  
+      <!-- Dark mode end -->
       <!-- Main content end  -->
     </div>
     <!-- Main container end -->
+
     <!-- Js file  -->
     <script src="js/script.js"></script>
   </body>
