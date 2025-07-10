@@ -104,9 +104,6 @@ ul {
   background: var(--skin-color);
   transition: all 0.3s ease;
 }
-.btn:hover {
-  /* transform: scale(0.5); */
-}
 .shadow-dark {
   box-shadow: 0 0 20px rgba(48, 46, 77, 0.25);
 }
