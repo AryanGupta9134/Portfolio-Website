@@ -13,8 +13,6 @@ Welcome to my Portfolio Website project! This repository contains the source cod
 ## Technologies Used
 
 - HTML5, CSS3, JavaScript
-- React.js (or your chosen framework)
-- Node.js (if applicable)
 - [Add any other relevant technologies]
 
 ## Getting Started
@@ -27,13 +25,9 @@ Welcome to my Portfolio Website project! This repository contains the source cod
     ```bash
     cd portfolio-website
     ```
-3. Install dependencies:
+3. Start the live server:
     ```bash
-    npm install
-    ```
-4. Start the development server:
-    ```bash
-    npm start
+    alt + l + o - for liver server.
     ```
 
 ## Deployment
