@@ -27,7 +27,7 @@ Welcome to my Portfolio Website project! This repository contains the source cod
     ```
 3. Start the live server:
     ```bash
-    alt + l + o - for liver server.
+    alt + l + o - for live server.
     ```
 
 ## Deployment
