@@ -574,13 +574,29 @@ h3.my-profession {
   overflow: hidden;
   cursor: pointer;
 }
+.portfolio-item-inner a img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.portfolio-item-inner a:hover img {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
 .portfolio .portfolio-item-inner .portfolio-image img{
   width: 100%;
   height: 100%;
   display: block;
 }
+.portfolio  h1{
+  color: white;
+  text-align: center;
+}
 
-/* certificate */
 /* Certificates Section */
 .certificate-item {
   flex: 0 0 33.33%;
